@@ -363,18 +363,104 @@ for (x = 0; x <= sampleArray.length - 1; x += 1) {
         height = sampleArray[x]
     }
 }
-// Katas 19:
+
 katas18Solution.append(height)
 
-let canvas = document.getElementById('for_loops_example1');
-let context = canvas.getContext('2d');
+// Katas 19:
+const katas19Heading = document.createElement("h3")
 
-context.font = '16px Arial';
-context.textBaseline = 'middle';
+parentElement.append(katas19Heading)
 
-for (let i = 0; i < 20; i = i + 1) {
-  context.fillStyle = 'gray';
-  context.fillRect(30 * i, 50 * i, 100, 40);
-  context.fillStyle = 'Black';
-  context.fillText('i == ' + i, 30 * i + 10, 50 * i + 20);
+katas19Heading.append("KATA 19:")
+
+const katas19Solution = document.createElement("div")
+
+parentElement.append(katas19Solution)
+
+for  (counter = 0; counter < 20; counter += 1) {
+    const greyDiv = document.createElement('div')
+    greyDiv.setAttribute('class', 'greyBlocks19')
+    parentElement.append(greyDiv)
 }
+
+//Katas 20:
+
+const katas20Heading = document.createElement("h3")
+
+parentElement.append(katas20Heading)
+
+katas20Heading.append("KATA 20:")
+
+const katas20Solution = document.createElement("div")
+
+parentElement.append(katas20Solution)
+
+let blockwidth20 = 105;
+
+for (counter = 0; counter < 20; counter += 1) {
+  const greyDiv = document.createElement("div");
+  greyDiv.setAttribute("class", "greyBlocks20");
+  greyDiv.style.width = blockwidth20 + "px";
+  blockwidth20 += 5;
+  parentElement.append(greyDiv);
+} 
+//Katas 21:
+const katas21Heading = document.createElement("h3")
+
+parentElement.append(katas21Heading)
+
+katas21Heading.append("KATA 21:")
+
+const katas21Solution = document.createElement("div")
+
+parentElement.append(katas21Solution)
+
+for (counter = 0; counter < 20; counter += 1) {
+    let widthPixels = sampleArray[counter];
+    const greyDiv = document.createElement("div");
+    greyDiv.setAttribute("class", "greyBlocks21");
+    greyDiv.style.width = widthPixels + "px";
+    parentElement.append(greyDiv);
+  }
+
+  //Katas 22:
+const katas22Heading = document.createElement("h3")
+
+parentElement.append(katas22Heading)
+
+katas22Heading.append("KATA 22:")
+
+const katas22Solution = document.createElement("div")
+
+parentElement.append(katas22Solution)
+for (counter = 0; counter < 20; counter += 1) {
+    let widthPixels = sampleArray[counter];
+    const greyDiv = document.createElement("div");
+    greyDiv.setAttribute("class", "greyBlocks22");
+    greyDiv.style.width = widthPixels + "px";
+    parentElement.append(greyDiv);
+  }
+    
+
+//Katas 23:
+const katas23Heading = document.createElement("h3")
+
+parentElement.append(katas23Heading)
+
+katas23Heading.append("KATA 23:")
+
+const katas23Solution = document.createElement("div")
+
+parentElement.append(katas23Solution)
+
+
+for (counter = 0; counter < 20; counter += 1) {
+    let widthPixels = sampleArray[counter];
+    const greyDiv = document.createElement("div");
+    greyDiv.setAttribute("class", "greyBlocks23");
+    greyDiv.style.width = widthPixels + "px";
+    if (widthPixels % 2 === 0) {
+      greyDiv.style.backgroundColor = "red";
+    }
+    parentElement.append(greyDiv);
+  }
